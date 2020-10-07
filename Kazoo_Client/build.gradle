@@ -1,0 +1,16 @@
+group 'it.itisplanck.kazoo.server'
+version '1.0'
+description "Il client di gioco."
+
+apply plugin: 'java'
+
+tasks.withType(JavaCompile) {
+  options.encoding = "UTF-8"
+}
+
+jar {
+    manifest {
+        attributes 'Created-By': 'Kazoo',
+        			'Main-Class': 'it.itisplanck.kazoo.Main'
+    }
+}

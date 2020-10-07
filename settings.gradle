@@ -1,0 +1,4 @@
+include 'Kazoo_Client'
+include 'Kazoo_Server'
+
+rootProject.name = 'Kazoo_Borsa'

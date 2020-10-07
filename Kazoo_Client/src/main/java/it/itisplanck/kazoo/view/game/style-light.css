@@ -1,0 +1,9 @@
+.root{
+    /*-fx-background-color: ;*/
+}
+
+.chart {
+    -fx-padding: 10px;
+    /*-fx-background-color: ;*/
+    -fx-legend-visible: false;
+}

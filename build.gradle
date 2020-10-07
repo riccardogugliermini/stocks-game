@@ -1,0 +1,5 @@
+group 'it.itisplanck.kazoo'
+description "Organizzatore del progetto."
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
