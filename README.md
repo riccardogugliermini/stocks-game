@@ -9,7 +9,6 @@ This project is a Stock Market Simulation Game developed as a part of a course o
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Development Team](#development-team)
 - [Software Used](#software-used)
 - [License](#license)
 
