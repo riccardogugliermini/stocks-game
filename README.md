@@ -1,78 +1,63 @@
-# Stocks Game
+# Stock Market Simulation Game
 
-## Overview
+This project is a Stock Market Simulation Game developed as a part of a course on Informatics - T.P.S.I.T. The project simulates a stock market where players can buy and sell shares in real-time, competing to make the best investment decisions.
 
-The Stocks Game is an educational and interactive application designed to simulate stock trading. It allows users to experience trading in a virtual environment, learn about the stock market, and develop strategies without financial risk.
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Development Team](#development-team)
+- [Software Used](#software-used)
+- [License](#license)
+
+## Introduction
+
+The project is a simulation game where each player starts with an initial amount of capital to invest in shares. The game ends when a player declares bankruptcy or all other players have done so, leading to the victory of the remaining player. The game can be played in both single-player and multiplayer modes.
 
 ## Features
 
-- Real-time stock market data simulation.
-- Virtual portfolio management with buy and sell options.
-- Historical data analysis and charting tools.
-- Leaderboards to compare performance with other users.
-- Educational resources and tutorials on stock trading.
-
-## Architecture
-
-### Frontend
-
-The frontend of the application is built using React.js, providing a responsive and interactive user interface. It handles user interactions, data visualization, and communication with the backend services.
-
-### Backend
-
-The backend is developed using Node.js and Express, handling authentication, data storage, and business logic. It integrates with third-party APIs to fetch real-time stock data and historical records.
-
-### Database
-
-MongoDB is used as the database to store user information, transaction records, and portfolio data. It ensures scalability and efficient data retrieval.
+- **Single-player and Multiplayer Modes**: Players can choose to play alone or connect to a server for a real-time multiplayer experience.
+- **Real-time Stock Market Simulation**: Stock prices fluctuate according to an algorithm that simulates real-world market behavior.
+- **Multiple Client Support**: In multiplayer mode, multiple players can connect to a server, and the game manages turns using a circular list.
+- **Graphical User Interface**: The game includes an intuitive GUI for both client and server, making it easy to configure and play.
 
 ## Installation
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/riccardogugliermini/stocks-game.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd stocks-game
-    ```
-3. Install dependencies:
-    ```bash
-    npm install
-    ```
-4. Run the application:
-    ```bash
-    npm start
-    ```
+To install the project, follow these steps:
 
-For detailed installation instructions, refer to the [Installation Instructions](path/to/InstallationInstructions.pdf).
+1. Clone the repository to your local machine:
+2.	Open the project in Eclipse or any compatible IDE.
+3.	Make sure you have the required plugins installed, such as JavaFx.
+4.	Run the server application first if you plan to play in multiplayer mode.
 
-## Testing
+## Usage
 
-### Unit Testing
+### Single-Player Mode
 
-Comprehensive unit tests are written to ensure the functionality of individual components and services. Jest is used as the testing framework. 
+	1.	Launch the game and set up your initial configuration, such as the number of players and the starting capital.
+	2.	Start the game and begin buying and selling shares based on the fluctuating market prices.
+	3.	The game ends when all players but one go bankrupt or a player chooses to leave the game.
 
-### Integration Testing
+### Multiplayer Mode
 
-Integration tests verify the correct interaction between different parts of the application. These tests cover user authentication, data fetching, and transaction processing. 
+	1.	Start the server application and configure it with the number of players, initial capital, and list of companies.
+	2.	Each player must run the client application, connect to the server by entering the server’s IP address and port number.
+	3.	The game proceeds in real-time, with players taking turns to manage their portfolios.
 
-For detailed test cases and results, refer to the [Testing Report](path/to/TestingReport.pdf).
+### Project Structure
 
-## Documentation
+	•	Server: Manages the game state, stock prices, and player turns.
+	•	Client: Allows players to interact with the game, including buying and selling shares.
+	•	Model-View-Controller (MVC) Architecture: The project follows the MVC pattern for organizing code.
 
-- [Installation Instructions](path/to/InstallationInstructions.pdf)
-- [Testing Report](path/to/TestingReport.pdf)
-- [Code Brief](path/to/CodeBrief.pptx)
+### Software Used
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
-## Contact
-
-For any questions or suggestions, please contact [Your Name](mailto:your.email@example.com).
+	•	Eclipse: IDE for Java development.
+	•	JavaFx: Used for creating the graphical user interface.
+	•	Mockflow: For designing the interface.
+	•	Gantt Project: For project management.
+	•	Dia: For creating diagrams.
+	•	Atom: For text editing.
